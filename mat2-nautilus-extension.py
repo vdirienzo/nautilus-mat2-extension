@@ -13,7 +13,7 @@ Features:
 - Creates cleaned copies (preserves originals)
 - System notifications for feedback
 
-Author: vdirienzo
+Author: Homero Thompson del Lago del Terror
 Date: December 2025
 License: MIT
 """
