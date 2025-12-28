@@ -34,7 +34,11 @@ Supports Nautilus 3.0, 4.0, and 4.1 APIs with automatic detection.
 - **libnotify** (optional): For desktop notifications
 - **zenity** (optional): For error dialogs
 
-### Installing Dependencies
+> **Note:** The installation script automatically installs missing dependencies on Debian/Ubuntu systems.
+
+### Manual Dependency Installation
+
+If you prefer to install dependencies manually:
 
 **Debian/Ubuntu:**
 ```bash
@@ -53,19 +57,27 @@ sudo pacman -S mat2 python-nautilus libnotify zenity
 
 ## Installation
 
-### From GitHub
+### From GitHub (Recommended)
+
+The installation script automatically detects and installs missing dependencies:
 
 ```bash
 # Clone the repository
 git clone https://github.com/vdiriern/nautilus-mat2-extension.git
 cd nautilus-mat2-extension
 
-# Run the installation script
+# Run the installation script (may ask for sudo password)
 ./install.sh
 
 # Restart Nautilus
 nautilus -q
 ```
+
+The installer will:
+- Check for required dependencies (`mat2`, `python3-nautilus`)
+- Automatically install any missing packages
+- Install optional dependencies (`libnotify-bin`, `zenity`) for notifications
+- Copy the extension to the correct location
 
 ### Manual Installation
 
